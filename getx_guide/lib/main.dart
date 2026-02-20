@@ -13,14 +13,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter GetX',
       theme: ThemeData(
-   
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       home: const MyHomePage(title: 'Flutter GetX'),
     );
   }
 }
-
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
