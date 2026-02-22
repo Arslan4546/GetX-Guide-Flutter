@@ -21,7 +21,7 @@ class DetailsView extends StatelessWidget {
 
             ElevatedButton(
               onPressed: () {
-                Get.back(result: "Data from Details");
+                Get.back(result: "details view");
               },
               child: const Text("Go Back"),
             ),

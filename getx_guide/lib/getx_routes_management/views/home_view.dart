@@ -5,13 +5,14 @@ import '../routes/app_routes.dart';
 
 class HomeView extends StatelessWidget {
   final HomeController controller = Get.find();
+  var result = "".obs;
 
   HomeView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Home")),
+      appBar: AppBar(title: Obx(() => Text("Home - ${result.value}"))),
       body: Center(
         child: Obx(
           () => Text(
@@ -31,7 +32,19 @@ class HomeView extends StatelessWidget {
           const SizedBox(height: 12),
 
           FloatingActionButton(
-            heroTag: "details",
+            onPressed: () async {
+              var result1 = await Get.toNamed(
+                AppRoutes.details,
+                arguments: {"name": "Arslan", "age": 24},
+              );
+
+              result.value = result1;
+            },
+            child: const Icon(Icons.arrow_forward),
+          ),
+
+          /// single button for just data passing without recieving
+          FloatingActionButton(
             onPressed: () {
               Get.toNamed(
                 AppRoutes.details,
