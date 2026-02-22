@@ -3,9 +3,9 @@ import 'package:get/get.dart';
 import 'package:getx_guide/getx_routes_management/routes/app_routes.dart';
 import 'package:getx_guide/getx_routes_management/routes/app_pages.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+// void main() {
+//   runApp(const MyApp());
+// }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
