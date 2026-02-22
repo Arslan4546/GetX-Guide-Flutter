@@ -5,7 +5,7 @@ import 'package:getx_guide/getx_language_change/controller/language_controller.d
 import 'package:getx_guide/getx_language_change/localization/app_translations.dart';
 import 'package:getx_guide/getx_language_change/services/storage_service.dart';
 
-import 'getx_language_change/views/home_view.dart';
+import 'views/home_view.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
